@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "standard",
+    "plugin:promise/recommended"
+  ],
+  "plugins": [
+    "standard",
+    "promise",
+    "mocha"
+  ],
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "fetch": true,
+    "expect": true,
+    "sinon": true,
+    "sandbox": true,
+    "FormData": true
+  },
+  "rules": {
+    "mocha/no-exclusive-tests": "error",
+    "mocha/no-global-tests": "error",
+    "mocha/no-identical-title": "error",
+    "mocha/no-nested-tests": "error",
+    "mocha/no-sibling-hooks": "error"
+  }
+}
