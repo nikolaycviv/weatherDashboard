@@ -1,20 +1,42 @@
 {
-  "name": "client",
+  "name": "client_weather_dashboard",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "lint": "eslint . --ext .js,.jsx --quiet && echo '✔ All good!'",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject --watchAll"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "classnames": "^2.2.6",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "history": "^4.10.1",
+    "jwt-decode": "^2.2.0",
     "react": "^16.13.1",
+    "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   },
   "eslintConfig": {
     "extends": "react-app"
