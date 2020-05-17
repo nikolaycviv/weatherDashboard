@@ -37,7 +37,7 @@ const initialise = async () => {
       host: dbConfig.host || 'localhost',
       username: dbConfig.username || 'root',
       password: dbConfig.password || null,
-      database: dbConfig.database || 'weather_app',
+      database: dbConfig.database || 'weatherDashboard',
       port: dbConfig.port || 3306
     }
     await database.connect(connectionDetails)
