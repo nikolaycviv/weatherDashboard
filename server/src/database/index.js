@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const Database = require('./config')
+const Database = require('./database')
 const db = module.exports = {}
 db.database = {}
 db.models = {}
