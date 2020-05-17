@@ -6,7 +6,7 @@ const logger = require('koa-logger')
 const koaJwt = require('koa-jwt')
 const config = require('../config')
 const dbConfig = config[process.env.NODE_ENV || 'development']
-const userRoutes = require('../routes/users')
+const userRoutes = require('../routes/user')
 const weatherRoutes = require('../routes/weather')
 
 const initialise = async () => {

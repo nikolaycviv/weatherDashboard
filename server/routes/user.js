@@ -3,7 +3,6 @@ const Router = require('koa-router')
 const router = new Router()
 const controllers = require('../src/controllers')
 
-
 router.post('/user/register', async ctx => {
   try {
     const token = await controllers.user.registerUser(ctx.request.body)
