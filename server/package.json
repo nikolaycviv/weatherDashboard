@@ -6,9 +6,8 @@
   "scripts": {
     "lint": "eslint . --ext .js,.jsx --quiet && echo '✔ All good!'",
     "start": "nodemon --inspect=9226 --config ./nodemon.json --watch ./src src/server.js",
-    "test": "NODE_ENV=test npm run lint && npm run test:coverage",
-    "test:coverage": "NODE_ENV=test nyc mocha --exit --opts test/unit/mocha.opts ./test/unit && nyc check-coverage",
-    "test:watch": "NODE_ENV=test mocha --watch --opts test/unit/mocha.opts ./test/unit"
+    "test": "set NODE_ENV=test npm run lint && npm run test:coverage",
+    "test:coverage": "set NODE_ENV=test && nyc node ./node_modules/mocha/bin/mocha --exit --opts test/unit/mocha.opts ./test/unit && nyc check-coverage"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",

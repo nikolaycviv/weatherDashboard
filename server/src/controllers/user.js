@@ -49,16 +49,14 @@ user.createUser = async (req) => {
     givenName,
     familyName,
     email,
-    password,
-    isAdmin
+    password
   } = req
   try {
     const options = {
       givenName,
       familyName,
       email,
-      password,
-      isAdmin
+      password
     }
     return await database.user.create(options)
   } catch (error) {
