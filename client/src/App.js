@@ -10,7 +10,7 @@ import Login from './components/Login'
 import Home from './components/Home'
 import Forecast from './components/Forecast'
 
-
+let loggedIn = false
 class App extends Component {
   render () {
     return (
