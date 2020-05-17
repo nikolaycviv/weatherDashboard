@@ -6,7 +6,7 @@ const initialState = {
   loading: true
 }
 
-export default function (state = initialState, action) {
+export default (state = initialState, action) => {
   switch (action.type) {
     case FORECAST_SUCCESS:
       return {
